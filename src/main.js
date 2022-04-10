@@ -5,10 +5,10 @@
 // 4. 데이터 구조
 // 5. 내장 객체
 // console.log(module.require('./animals'))
-const animalsA = require('./animals')
-const animalsB = require('./animals')
-const animalsC = require('./animals')
+const animals = require('./animals')
+const { paths } = module
+const dogs = require('dogs')
 
-console.log(animalsA === animalsB)
-console.log(animalsB === animalsC)
-console.log(animalsC)
+console.log(paths)
+console.log(dogs)
+console.log(animals)
